@@ -341,7 +341,8 @@ class HeartRateReceiver {
 
 class HeartRateViewController: UIViewController, HeartRateReceiverDelegate {
     func heartRateUpdated(to bpm: Int) {
-        heartRateLabel.text = "The user has been shown a heart rate of \(bpm)"
+        //heartRateLabel.text = "The user has been shown a heart rate of \(bpm)"
+        print("The user has been shown a heart rate of \(bpm)")
     }
     var heartRateLabel: UILabel = UILabel()
 }
